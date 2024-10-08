@@ -1,0 +1,26 @@
+main{
+    background-color: rgb(146, 142, 142);
+}
+
+header, nav, section, aside, footer{
+    background-color: rgb(36, 117, 44);
+    text-align: center;
+    padding: 2%;
+    font-size: 1.6em;
+}
+
+header { grid-area: header; }
+nav{ grid-area: nav;}
+section{ grid-area: section;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+.main {
+    display: grid;
+    padding: 2%;
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-areas: 
+    'header header header header header header'
+    'nav section section section aside aside'
+    'nav footer footer footer footer footer';
+}
